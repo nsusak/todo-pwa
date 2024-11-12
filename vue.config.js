@@ -21,5 +21,8 @@ module.exports = defineConfig({
         }
       ]
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/your-repo-name/' // Replace 'your-repo-name' with the actual repo name
+    : '/'
 })
